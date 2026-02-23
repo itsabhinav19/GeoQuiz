@@ -15,7 +15,7 @@ function Result() {
       return;
     }
 
-    axios.post("http://localhost:5000/api/quiz/save-score",
+    axios.post("https://geo-quiz-server.vercel.app/api/quiz/save-score",
       { score },
       { headers: { Authorization: token } }
     );

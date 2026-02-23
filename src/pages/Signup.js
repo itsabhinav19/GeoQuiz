@@ -75,7 +75,7 @@ function Signup() {
   const navigate = useNavigate();
 
   const handleSignup = async () => {
-    await fetch("http://localhost:5000/api/auth/signup", {
+    await fetch("https://geo-quiz-server.vercel.app/api/auth/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, password }),
