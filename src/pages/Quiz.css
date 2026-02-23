@@ -1,0 +1,161 @@
+/* Background */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-image: url("/public/background2.jpg");
+  background-size: cover;        /* makes image cover full screen */
+  background-position: center;   /* centers image */
+  background-repeat: no-repeat;  /* prevents repeating */
+  background-attachment: fixed;  /* keeps it fixed while scrolling */
+}
+/* body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+} */
+
+
+/* Main Card */
+.quiz-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logout Button */
+.logout-btn {
+  padding: 6px 14px;
+  background: crimson;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: darkred;
+  transform: scale(1.05);
+}
+
+/* Timer */
+.timer {
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Question */
+.question-text {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* Options */
+.option-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.option-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Next Button */
+.next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00c6ff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #0072ff;
+}
+
+/* Restart Button */
+.restart-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #28a745;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.restart-btn:hover {
+  background: #1e7e34;
+}
+
+/* Glass Card Style */
+.glass-card {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+}
+
+/* Input fields */
+.glass-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* Buttons */
+.glass-card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #00c6ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.glass-card button:hover {
+  background: #0072ff;
+}
