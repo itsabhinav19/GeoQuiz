@@ -25,7 +25,7 @@ function Quiz() {
 
   // ✅ Fetch Questions
   useEffect(() => {
-    fetch("https://geo-quiz-server.vercel.app/api/questions")
+    fetch(`${process.env.REACT_APP_API_URI}/api/questions`)
       .then((res) => res.json())
       .then((data) => {
         setQuestions(data);
